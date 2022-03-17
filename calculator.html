@@ -10,26 +10,35 @@
     <header>
       <h1>Loan Calculator 💰💲💵</h1>
     </header>
+
     <section class="calc-container">
+    
       <form id="calc-form">
-        <label>
+    
+        <label for="loan-amount">
           Loan Amount
-          <input type="text" id="loan-amount">
+          <input type="text" id="loan-amount" name="loan-amount" placeholder="1 - 999,999,999">
         </label>
-        <label>
+    
+        <label for="loan-years">
           Term in Years
-          <input type="text" id="loan-years">
+          <input type="text" id="loan-years" name="loan-years" placeholder="1 - 99">
         </label>
-        <label>
+    
+        <label for="loan-rate">
           Yearly Rate
-          <input type="text" id="loan-rate">
+          <input type="text" id="loan-rate" name="loan-rate" placeholder="1 - 99">
         </label>
+    
         <button type="submit" id="calc-submit">Calculate</button>
+    
       </form>
+    
       <div>
         <h3>Monthly Payment<h3>
         <span id="monthly-payment"></span>
       </div>
     </section>
+
   </body>
 </html>
